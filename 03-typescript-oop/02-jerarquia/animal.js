@@ -1,7 +1,10 @@
 "use strict";
-// Superclase
-class Animal {
+Object.defineProperty(exports, "__esModule", { value: true });
+const Organismo_1 = require("./Organismo");
+// Superclase-Subclase
+class Animal extends Organismo_1.Organismo {
     constructor(age, name, weight, gender, color) {
+        super('animal');
         this.age = age;
         this.name = name;
         this.weight = weight;

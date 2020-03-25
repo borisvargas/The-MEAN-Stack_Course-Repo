@@ -1,6 +1,8 @@
-// Superclase
+import { Organismo } from './Organismo';
 
-class Animal {
+
+// Superclase-Subclase
+class Animal extends Organismo{
     
     // estado
     age: number;
@@ -16,6 +18,7 @@ class Animal {
         gender: string,
         color: string
     ) {
+        super( 'animal' );
         this.age = age;
         this.name = name;
         this.weight = weight;
